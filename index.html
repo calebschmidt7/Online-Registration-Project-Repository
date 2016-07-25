@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Registration Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link href='https://fonts.googleapis.com/css?family=Orbitron:400,700|Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    
+    <div class="nav">
+      <p>Alien Adventures</p>
+    </div>
+
+    <header class="signup-info">
+      <h1>Sign Up For Your Personalized Abduction!</h1>
+      <p>Ever wanted to be abducted by aliens?  Sign up for an out-of-this-world kidnapping, taylored to your personal preferences!</p>
+    </header>
+
+    <img src="Images/tobythealien.png" alt="stock photo of alien">
+
+    <form action="index.html" method="post">
+      
+
+      <fieldset>
+
+        <legend> Personal Information </legend>
+        
+        <label for="name" class="inlineLabel2">What is your name?</label>
+        <input type="text" id="name" name="person_name" placeholder="required">
+
+        <label for="email" class="inlineLabel2">What is your email?</label>
+        <input type="email" id="email" name="person_email" placeholder="required">
+
+        <label for="telephone" class="inlineLabel2">What is your telephone number?</label>
+        <input type="tel" id="telephone" name="person_telephone">
+
+        <label for="continent">What is your Continent?</label>
+        <select id="continent" name="person_continent">
+          <option value="asia">Asia</option>
+          <option value="africa">Africa</option>
+          <option value="north_america">North America</option>
+          <option value="south_america">South America</option>
+          <option value="antarctica">Antarctica</option>
+          <option value="europe">Europe</option>
+          <option value="australia">Australia</option>
+        </select>
+
+      </fieldset>
+
+
+      <fieldset>
+        
+        <legend>Customize Your Abduction</legend>
+
+        <label for="planets">Which planet do you want to visit?</label>
+        <select id="planets" name="person_planet" >
+          <option value="earth">Stay here on Earth!</option>
+          <option value="mercury">Mercury</option>
+          <option value="venus">Venus</option>
+          <option value="mars">Mars</option>
+          <option value="jupiter">Jupiter</option>
+          <option value="saturn">Saturn</option>
+          <option value="uranus">Uranus</option>
+          <option value="neptune">Neptune</option>
+        </select>
+
+        <label>When should we kidnap you?</label>
+        <input type="radio" id="daytime" value="daytime" name="kidnap_time">
+        <label for="daytime" class="inlineLabel">Daytime</label>
+        <input type="radio" id="nighttime" value="nighttime" name="kidnap_time">
+        <label for="nighttime" class="inlineLabel">Nighttime</label>
+
+        <label>Standard Experiences (Included at no extra cost!)</label>
+        <input type="checkbox" id="probing" value="experience_probing" name="person_experience">
+        <label for="probing" class="inlineLabel">Probing!</label><br>
+        <input type="checkbox" id="transplant" value="experience_transplant" name="person_experience">
+        <label for="transplant" class="inlineLabel">Alien Tissue Transplant!</label><br>
+        <input type="checkbox" id="implant" value="experience_implant" name="person_experience">
+        <label for="implant" class="inlineLabel">Space Technology Implant In Your Brain!</label><br>
+        <input type="checkbox" id="weapons" value="experience_weapons" name="person_experience">
+        <label for="weapons" class="inlineLabel">Try Out Futuristic Weapons On Lowly Life Forms! </label><br>
+        <input type="checkbox" id="spaceship" value="experience_spaceship" name="person_experience">
+        <label for="spaceship" class="inlineLabel">Fly The UFO!</label><br>
+
+
+        <label for="requests">Extra/Special Requests:</label>
+        <textarea id="requests" name="person_requests" placeholder="Please type requests here"></textarea>
+
+
+      </fieldset>
+
+      <button type="submit">Send the Aliens!</button>
+
+    </form>
+
+   
+    <footer class="footer">
+     <p>Copyright Alien Adventures </p>
+    </footer>
+    
+</body>
+</html>
